@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Lenguaje, Framework
 
-# Register your models here.
+admin.site.register(Lenguaje)
+admin.site.register(Framework)
