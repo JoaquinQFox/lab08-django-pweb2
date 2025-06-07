@@ -11,4 +11,4 @@ class Framework(models.Model):
     lenguaje = models.ForeignKey(Lenguaje, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.nombre} ({self.lenguaje})"
+        return self.nombre
