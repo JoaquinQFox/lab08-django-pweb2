@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import GeneratePdf, index
+from .views import GeneratePdf, indexPDF, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='inicio'),
+    path('pdf/', indexPDF, name='indexPDF'),
     path('pdf/generarePDF', GeneratePdf.as_view(), name='generatePDF'),
-    path('pdf/', index, name='indexPDF'),
-    path('', include('communications.urls')),
+    path('communications', include('communications.urls')),
 ]
