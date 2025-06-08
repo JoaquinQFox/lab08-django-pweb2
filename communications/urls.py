@@ -1,7 +1,8 @@
 from django.urls import path
-from . import views
+from .views import correo_enviado, crear_correo
 
 urlpatterns = [
-    path('', views.index),
+    path('', crear_correo, name='crear_correo'),
+    path('enviar_correo/', correo_enviado, name='enviar_correo'),
 ]
 
