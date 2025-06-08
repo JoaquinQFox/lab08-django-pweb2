@@ -124,8 +124,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST = 'smtp.office365.com'
+EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'joaquin_aqb@hotmail.com'
-EMAIL_HOST_PASSWORD = 'ale14789635'
+EMAIL_HOST_USER = 'postmaster@sandboxac77903abffd480c867a989ad214c4b1.mailgun.org'
+EMAIL_HOST_PASSWORD = '260cd368eaf81a404c8461d81277279b-08c79601-cc23d1ed'
 EMAIL_USE_TLS = True
