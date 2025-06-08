@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Crear PDF</h1>
+    <p><a href="{% url 'inicio' %}">Volver al inicio</a></p>
     <form action="{% url 'generatePDF' %}" method="get">
         {% csrf_token %}
         <label for="numero">Numero:</label>
